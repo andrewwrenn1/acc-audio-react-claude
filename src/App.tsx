@@ -18,7 +18,6 @@ const AcceleratingMusicPlayer = () => {
   // Start speed acceleration interval
   useEffect(() => {
     if (isPlaying) {
-      // Clear any existing interval first
       if (speedIntervalRef.current) {
         clearInterval(speedIntervalRef.current);
       }
